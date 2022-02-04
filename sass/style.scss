@@ -1,0 +1,229 @@
+/* Variables */
+@import "variables";
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Base Style */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+body {
+    background-color: $main-color;
+    font-family: $main-font;
+}
+
+/* Navbar */
+.navbar {
+    font-size: 1.2em;
+    border-bottom: 1px solid $secondary-color-dark;
+    background-color: $secondary-color;
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        &-item {
+            text-decoration: none;
+            color: $main-color;
+            font-size: 1.2em;
+        }
+        &-logo {
+            text-decoration: none;
+            color: $main-color;
+            &__highlight {
+                font-weight: 900;
+            }
+        }
+        &-toggle {
+            z-index: 1;
+        }
+    }
+}
+
+/* Home Section */
+@keyframes profileAnimation {
+    0% {
+        top: -90vh;
+        transform: rotate(0deg);
+    }
+    
+    50%{
+        top:0;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        
+    }
+}
+.home {
+    margin-top: 1.2rem;
+    text-align: center;
+    &-section {
+        max-width: 450px;
+        margin: auto;
+    }
+    &-image {
+        animation-name: profileAnimation;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        position: relative;
+        width: 70%;
+        border-radius: 100%;
+        z-index: -1;
+        max-width: 300px;
+    }
+    &-content {
+        margin-top: 1rem;
+    }
+    &-title {
+        letter-spacing: .5px;
+        font-size: 2em;
+        margin: .5rem 0;
+        &__name {
+            display: none;
+        }
+    }
+    &-subtitle {
+        letter-spacing: .5px;
+        margin-bottom: .5rem;
+        color: $text-color-light;
+    }
+    &-btns {
+        margin: 1em 0;
+    }
+    &-btn {
+        display: inline-block;
+        margin: 0 .5rem;
+        padding: .5em 1.5em;
+        border-radius: 40px;
+        color: $main-color;
+        background-color: $secondary-color;
+        text-decoration: none;
+    }
+}
+
+/* Responsive For Tablet */
+@media (min-width:768px) {
+    /* Container */ 
+    .container {
+        width: 650px;
+    }
+    /* Navbar */
+    .navbar {
+        border-bottom: 1px solid $secondary-color-dark;
+        background-color: $secondary-color;
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            &-list {
+                margin-left: auto;
+                display: block;
+            }
+            &-toggle {
+                display: none;
+            }
+            &-item {
+                margin: 0 .5em;
+                font-size: 1em;
+            }
+        }
+    }
+
+    /* Home Section */
+    .home {
+        &-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 100%;
+            align-items: center;
+            
+        }   
+    }
+}
+
+/* Responsive For Laptop */
+@media (min-width:1100px) {
+     /* Container */ 
+     .container {
+        width: 900px;
+    }
+    /* Home Section */
+    .home {
+        &-title {
+            font-size: 3em;
+            margin: 1rem 0;
+            &__name {
+                display: none;
+            }
+        }
+        &-subtitle {
+            margin-bottom: 2rem;
+            font-size: 1.1em;
+            
+        }
+    }
+}
+
+/* Navbar toggle */
+@keyframes openAnimation {
+    from {
+        top: -100vh;
+        border-bottom-left-radius: 250px;
+        border-bottom-right-radius: 250px;
+    }
+    to {
+        top:0;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+@keyframes closeAnimation {
+    from {
+        top: 0;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    to {
+        top:-100vh;
+        border-bottom-left-radius: 150px;
+        border-bottom-right-radius: 150px;
+    }
+}
+
+@media (max-width:766px) {
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: -100vh;
+        left:0;
+        background-color: $secondary-color;
+        /* Animation */
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    
+    .nav-item {
+        display: block;
+        margin: 1em 0;
+    }
+}
+
+/* Delete THIS */
