@@ -1,6 +1,9 @@
 /* Variables */
 @import "variables";
 
+/* Heart Animation for footer */
+@import "heart.scss";
+
 /* CSS Reset */
 * {
     margin: 0;
@@ -57,14 +60,13 @@ body {
         top: -90vh;
         transform: rotate(0deg);
     }
-    
-    50%{
-        top:0;
+
+    50% {
+        top: 0;
     }
 
     100% {
         transform: rotate(360deg);
-        
     }
 }
 .home {
@@ -88,16 +90,16 @@ body {
         margin-top: 1rem;
     }
     &-title {
-        letter-spacing: .5px;
+        letter-spacing: 0.5px;
         font-size: 2em;
-        margin: .5rem 0;
+        margin: 0.5rem 0;
         &__name {
             display: none;
         }
     }
     &-subtitle {
-        letter-spacing: .5px;
-        margin-bottom: .5rem;
+        letter-spacing: 0.5px;
+        margin-bottom: 0.5rem;
         color: $text-color-light;
     }
     &-btns {
@@ -105,8 +107,8 @@ body {
     }
     &-btn {
         display: inline-block;
-        margin: 0 .5rem;
-        padding: .5em 1.5em;
+        margin: 0.3em 0.5rem;
+        padding: 0.5em 1.5em;
         border-radius: 40px;
         color: $main-color;
         background-color: $secondary-color;
@@ -114,9 +116,88 @@ body {
     }
 }
 
+/* Portfolio Section */
+.portfolio {
+    &-section {
+    }
+    &-content {
+        text-align: center;
+        margin: 2em 0 1em 0;
+    }
+    &-title {
+        font-size: 2em;
+    }
+    &-subtitle {
+        font-size: 1.1em;
+        letter-spacing: 0.5px;
+        color: $text-color-light;
+    }
+    &-cards {
+        display: grid;
+        justify-items: center;
+    }
+    &-card {
+        max-width: 400px;
+        border: 2px dashed $secondary-color;
+        border-radius: 10px;
+        margin: 1em 0;
+        padding: 0.5em;
+        &__content {
+            text-align: center;
+            &-title {
+                font-size: 1.2em;
+            }
+            &-subtitle {
+                color: $text-color-light;
+                &--highlight {
+                    font-weight: 500;
+                }
+            }
+        }
+        &__btns {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0.5em 0em;
+        }
+        &__btn {
+            display: flex;
+            align-items: center;
+            margin: 0.2em 0.5rem;
+            padding: 0.5em 1.5em;
+            border-radius: 40px;
+            color: #eeeeee;
+            background-color: #00adb5;
+            text-decoration: none;
+        }
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: $secondary-color;
+    margin-top: 2em;
+    &-content {
+    }
+    &-title {
+        text-align: center;
+        color: $main-color;
+        padding: 1em 0;
+    }
+    &-links {
+        &__container {
+            display: none;
+        }
+    }
+    &-link {
+        text-decoration: none;
+        color: $main-color;
+    }
+}
+
 /* Responsive For Tablet */
-@media (min-width:768px) {
-    /* Container */ 
+@media (min-width: 768px) {
+    /* Container */
     .container {
         width: 650px;
     }
@@ -135,7 +216,7 @@ body {
                 display: none;
             }
             &-item {
-                margin: 0 .5em;
+                margin: 0 0.5em;
                 font-size: 1em;
             }
         }
@@ -148,15 +229,91 @@ body {
             grid-template-columns: 1fr 1fr;
             max-width: 100%;
             align-items: center;
-            
-        }   
+        }
+    }
+
+    /* Portfolio Section */
+    .portfolio {
+        &-section {
+        }
+        &-content {
+            text-align: center;
+            margin: 2em 0 1em 0;
+        }
+        &-title {
+            font-size: 2em;
+        }
+        &-subtitle {
+            font-size: 1.1em;
+            letter-spacing: 0.5px;
+            color: $text-color-light;
+        }
+        &-cards {
+            grid-template-columns: 1fr 1fr;
+        }
+        &-card {
+            max-width: 400px;
+            border: 2px dashed $secondary-color;
+            border-radius: 10px;
+            margin: 0.5em 1em;
+            padding: 0.5em;
+            &__content {
+                text-align: center;
+                &-title {
+                    font-size: 1.2em;
+                }
+                &-subtitle {
+                    color: $text-color-light;
+                    &--highlight {
+                        font-weight: 500;
+                    }
+                }
+            }
+            &__btns {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 0.5em 0em;
+            }
+            &__btn {
+                display: flex;
+                align-items: center;
+                margin: 0.2em 0.5rem;
+                padding: 0.5em 1.5em;
+                border-radius: 40px;
+                color: #eeeeee;
+                background-color: #00adb5;
+                text-decoration: none;
+            }
+        }
+    }
+    /* Footer */
+    .footer {
+        background-color: $secondary-color;
+        margin-top: 35vh;
+        &-content {
+        }
+        &-title {
+            text-align: center;
+            color: $main-color;
+            padding: 1em 0;
+        }
+        &-links {
+            &__container {
+                display: none;
+            }
+        }
+        &-link {
+            text-decoration: none;
+            color: $main-color;
+        }
     }
 }
 
 /* Responsive For Laptop */
-@media (min-width:1100px) {
-     /* Container */ 
-     .container {
+@media (min-width: 1100px) {
+    /* Container */
+    .container {
         width: 900px;
     }
     /* Home Section */
@@ -171,7 +328,6 @@ body {
         &-subtitle {
             margin-bottom: 2rem;
             font-size: 1.1em;
-            
         }
     }
 }
@@ -184,7 +340,7 @@ body {
         border-bottom-right-radius: 250px;
     }
     to {
-        top:0;
+        top: 0;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
     }
@@ -197,13 +353,13 @@ body {
         border-bottom-right-radius: 0px;
     }
     to {
-        top:-100vh;
+        top: -100vh;
         border-bottom-left-radius: 150px;
         border-bottom-right-radius: 150px;
     }
 }
 
-@media (max-width:766px) {
+@media (max-width: 766px) {
     .nav-list {
         display: flex;
         flex-direction: column;
@@ -213,17 +369,15 @@ body {
         height: 100vh;
         width: 100%;
         top: -100vh;
-        left:0;
+        left: 0;
         background-color: $secondary-color;
         /* Animation */
         animation-duration: 1s;
         animation-fill-mode: forwards;
     }
-    
+
     .nav-item {
         display: block;
         margin: 1em 0;
     }
 }
-
-/* Delete THIS */
