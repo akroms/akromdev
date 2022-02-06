@@ -1,8 +1,8 @@
 /* Variables */
 @import "variables";
 
-/* Heart Animation for footer */
-@import "heart.scss";
+/* Scroll Bar */
+@import "scrollbar";
 
 /* CSS Reset */
 * {
@@ -31,11 +31,12 @@ body {
     font-size: 1.2em;
     border-bottom: 1px solid $secondary-color-dark;
     background-color: $secondary-color;
+
     .nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 50px;
+        height: 40px;
         &-item {
             text-decoration: none;
             color: $main-color;
@@ -52,6 +53,26 @@ body {
             z-index: 1;
         }
     }
+}
+
+/* Navbar Fixed With Animation */
+@keyframes fixedAnimation {
+    from {
+        top: -80px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.navbar-fixed {
+    position: sticky;
+    width: 100%;
+    box-shadow: 0 3px 50px 0 $secondary-color-dark;
+
+    animation-name: fixedAnimation;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
 }
 
 /* Home Section */
@@ -81,7 +102,7 @@ body {
         animation-duration: 3s;
         animation-fill-mode: forwards;
         position: relative;
-        width: 70%;
+        width: 60%;
         border-radius: 100%;
         z-index: -1;
         max-width: 300px;
@@ -118,6 +139,7 @@ body {
 
 /* Portfolio Section */
 .portfolio {
+    display: none;
     &-section {
     }
     &-content {
@@ -175,18 +197,28 @@ body {
 
 /* Footer */
 .footer {
+    position: relative;
+    bottom: -260px;
+    right: 0;
+    z-index: -1;
+    width: 100%;
     background-color: $secondary-color;
-    margin-top: 2em;
+
     &-content {
+        display: flex;
+        align-items: center;
     }
     &-title {
         text-align: center;
         color: $main-color;
         padding: 1em 0;
+        display: inline-block;
+        font-size: 0.8em;
     }
     &-links {
         &__container {
             display: none;
+            align-items: center;
         }
     }
     &-link {
@@ -208,6 +240,7 @@ body {
         .nav {
             display: flex;
             justify-content: space-between;
+            height: 50px;
             &-list {
                 margin-left: auto;
                 display: block;
@@ -229,6 +262,9 @@ body {
             grid-template-columns: 1fr 1fr;
             max-width: 100%;
             align-items: center;
+        }
+        &-image {
+            width: 70%;
         }
     }
 
@@ -289,18 +325,24 @@ body {
     }
     /* Footer */
     .footer {
+        bottom: -290px;
         background-color: $secondary-color;
-        margin-top: 35vh;
         &-content {
         }
         &-title {
             text-align: center;
             color: $main-color;
             padding: 1em 0;
+            display: inline-block;
+            font-size: 1em;
         }
         &-links {
+            margin-left: auto;
+            display: flex;
+
             &__container {
-                display: none;
+                display: flex;
+                margin-left: 1em;
             }
         }
         &-link {
@@ -329,6 +371,10 @@ body {
             margin-bottom: 2rem;
             font-size: 1.1em;
         }
+    }
+    /* Footer */
+    .footer {
+        bottom: -220px;
     }
 }
 
@@ -380,4 +426,58 @@ body {
         display: block;
         margin: 1em 0;
     }
+}
+
+/* Heart Animation for footer */
+.heart {
+    background-color: red;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    transform: rotate(45deg);
+    animation: animateHeart 1.2s infinite;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: red;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    &::before {
+        left: -6px;
+    }
+
+    &::after {
+        top: -6px;
+    }
+}
+
+@keyframes animateHeart {
+    0% {
+        transform: rotate(45deg) scale(0.8);
+    }
+    5% {
+        transform: rotate(45deg) scale(0.9);
+    }
+    10% {
+        transform: rotate(45deg) scale(0.8);
+    }
+    15% {
+        transform: rotate(45deg) scale(1);
+    }
+    50% {
+        transform: rotate(45deg) scale(0.8);
+    }
+    100% {
+        transform: rotate(45deg) scale(0.8);
+    }
+}
+
+.center {
+    display: inline-block;
+    padding: 0 0.5em;
 }
