@@ -69,7 +69,7 @@ body {
     position: sticky;
     width: 100%;
     box-shadow: 0 3px 50px 0 $secondary-color-dark;
-
+    background-color:  #00adb5d4;
     animation-name: fixedAnimation;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
@@ -197,8 +197,8 @@ body {
 
 /* Footer */
 .footer {
-    position: relative;
-    bottom: -260px;
+    position: fixed;
+    bottom: 0;
     right: 0;
     z-index: -1;
     width: 100%;
@@ -235,8 +235,6 @@ body {
     }
     /* Navbar */
     .navbar {
-        border-bottom: 1px solid $secondary-color-dark;
-        background-color: $secondary-color;
         .nav {
             display: flex;
             justify-content: space-between;
@@ -325,7 +323,7 @@ body {
     }
     /* Footer */
     .footer {
-        bottom: -290px;
+    
         background-color: $secondary-color;
         &-content {
         }
@@ -374,7 +372,7 @@ body {
     }
     /* Footer */
     .footer {
-        bottom: -220px;
+       
     }
 }
 

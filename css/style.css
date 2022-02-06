@@ -89,6 +89,7 @@ body {
   position: sticky;
   width: 100%;
   box-shadow: 0 3px 50px 0 #4D8076;
+  background-color: #00adb5d4;
   animation-name: fixedAnimation;
   animation-duration: 0.8s;
   animation-fill-mode: forwards;
@@ -212,8 +213,8 @@ body {
 
 /* Footer */
 .footer {
-  position: relative;
-  bottom: -260px;
+  position: fixed;
+  bottom: 0;
   right: 0;
   z-index: -1;
   width: 100%;
@@ -247,10 +248,6 @@ body {
   }
 
   /* Navbar */
-  .navbar {
-    border-bottom: 1px solid #4D8076;
-    background-color: #00ADB5;
-  }
   .navbar .nav {
     display: flex;
     justify-content: space-between;
@@ -333,7 +330,6 @@ body {
 
   /* Footer */
   .footer {
-    bottom: -290px;
     background-color: #00ADB5;
   }
   .footer-title {
@@ -377,9 +373,6 @@ body {
   }
 
   /* Footer */
-  .footer {
-    bottom: -220px;
-  }
 }
 /* Navbar toggle */
 @keyframes openAnimation {

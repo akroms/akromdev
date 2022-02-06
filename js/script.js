@@ -16,7 +16,7 @@ const footerStyle = document.body.querySelector("footer");
 /* Home */
 navHome.addEventListener("click", (e) => {
     homeContent.style.display = "block";
-    footerStyle.style.bottom = "-220px";
+    footerStyle.style.position = "fixed";
     portfolioContent.style.display = "none";
     e.preventDefault();
 });
@@ -24,7 +24,7 @@ navHome.addEventListener("click", (e) => {
 /* Portfolio */
 const navPortfolioStyle = function (e) {
     portfolioContent.style.display = "block";
-    footerStyle.style.bottom = "-10px";
+    footerStyle.style.position = "static";
     homeContent.style.display = "none";
     e.preventDefault();
 };
