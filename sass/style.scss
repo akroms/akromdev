@@ -69,7 +69,7 @@ body {
     position: sticky;
     width: 100%;
     box-shadow: 0 3px 50px 0 $secondary-color-dark;
-    background-color:  #00adb5d4;
+    background-color: #00adb5d4;
     animation-name: fixedAnimation;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
@@ -191,6 +191,50 @@ body {
             color: #eeeeee;
             background-color: #00adb5;
             text-decoration: none;
+        }
+    }
+}
+
+/* About Section */
+.about {
+    display: none;
+    margin: 1em 0;
+    color: $text-color-light;
+    letter-spacing: 0.5px;
+    &-section {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    &-title {
+        margin-top: 1.5em;
+        text-transform: uppercase;
+    }
+    &-subtitle {
+        margin: 0.5em 0;
+        &__education {
+            margin: 0.7em 0;
+        }
+        &--education {
+            &--highlight {
+                font-weight: 500;
+            }
+        }
+        &--language {
+            margin: 0.5em 0;
+        }
+        &--language:last-child {
+            margin-bottom: 2em;
+        }
+    }
+
+    &-skill {
+        display: flex;
+        align-items: center;
+        margin: 1em 0;
+        margin-right: 1em;
+        &__image {
+            width: 32px;
+            margin-right: 0.6em;
         }
     }
 }
@@ -321,9 +365,20 @@ body {
             }
         }
     }
+
+    /* About Section */
+    .about {
+        &-section {
+            max-width: 80%;
+        }
+        &-skills {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
     /* Footer */
     .footer {
-    
         background-color: $secondary-color;
         &-content {
         }
@@ -372,7 +427,6 @@ body {
     }
     /* Footer */
     .footer {
-       
     }
 }
 

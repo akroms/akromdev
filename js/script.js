@@ -10,6 +10,10 @@ const navPortfolio = document.querySelector(".nav-portfolio");
 const portfolioBtn = document.querySelector(".portfolio-btn");
 const portfolioContent = document.querySelector(".portfolio");
 
+/* About Me */
+const navAboutMe = document.querySelector(".nav-about-me");
+const aboutContent = document.querySelector(".about");
+
 /* Footer */
 const footerStyle = document.body.querySelector("footer");
 
@@ -18,6 +22,9 @@ navHome.addEventListener("click", (e) => {
     homeContent.style.display = "block";
     footerStyle.style.position = "fixed";
     portfolioContent.style.display = "none";
+    aboutContent.style.display = "none";
+    navList.style.animationName = "closeAnimation";
+    document.body.style.overflowY = "scroll";
     e.preventDefault();
 });
 
@@ -26,8 +33,23 @@ const navPortfolioStyle = function (e) {
     portfolioContent.style.display = "block";
     footerStyle.style.position = "static";
     homeContent.style.display = "none";
+    aboutContent.style.display = "none";
+    navList.style.animationName = "closeAnimation";
+    document.body.style.overflowY = "scroll";
     e.preventDefault();
 };
+
+/* About Me */
+navAboutMe.addEventListener("click", (e) => {
+    aboutContent.style.display = "block";
+    homeContent.style.display = "none";
+    footerStyle.style.position = "relative";
+    footerStyle.style.bottom = "-135px";
+    portfolioContent.style.display = "none";
+    navList.style.animationName = "closeAnimation";
+    document.body.style.overflowY = "scroll";
+    e.preventDefault();
+});
 
 navPortfolio.addEventListener("click", navPortfolioStyle);
 portfolioBtn.addEventListener("click", navPortfolioStyle);
@@ -47,11 +69,10 @@ document.addEventListener("scroll", () => {
 toggle.addEventListener("click", () => {
     if (navList.style.animationName === "openAnimation") {
         navList.style.animationName = "closeAnimation";
-        document.body.style.overflow = "scroll";
-        toggle.innerHTML = togglerImageOpen;
+        document.body.style.overflowY = "scroll";
+        
     } else {
         navList.style.animationName = "openAnimation";
-        document.body.style.overflow = "hidden";
-        toggle.innerHTML = togglerImageClose;
+        document.body.style.overflowY = "hidden";
     }
 });
