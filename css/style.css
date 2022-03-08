@@ -251,6 +251,10 @@ body {
   width: 32px;
   margin-right: 0.6em;
 }
+.about-skill__image--npm {
+  width: 60px;
+  margin-right: 0.6em;
+}
 
 /* Footer */
 .footer {
