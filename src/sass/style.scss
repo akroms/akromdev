@@ -236,11 +236,30 @@ body {
             width: 32px;
             margin-right: 0.6em;
         }
-        &__image--npm {
-            width: 60px;
-            margin-right: 0.6em;
-        }
     }
+}
+
+/* Loadder */
+.loadder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hider untill fully loading */
+.d-none {
+    display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 400ms;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 /* Footer */
@@ -379,6 +398,12 @@ body {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+        }
+        &-skill {
+            &__image--npm {
+                width: 55px;
+                margin-right: 0.6em;
+            }
         }
     }
     /* Footer */

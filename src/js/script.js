@@ -1,21 +1,8 @@
-/* Navbar Fixed */
-const navbar = document.querySelector(".navbar");
-
-/* Home */
-const navHome = document.querySelector(".nav-home");
-const homeContent = document.querySelector(".home");
-
-/* Portfolio */
-const navPortfolio = document.querySelector(".nav-portfolio");
-const portfolioBtn = document.querySelector(".portfolio-btn");
-const portfolioContent = document.querySelector(".portfolio");
-
-/* About Me */
-const navAboutMe = document.querySelector(".nav-about-me");
-const aboutContent = document.querySelector(".about");
-
-/* Footer */
-const footerStyle = document.body.querySelector("footer");
+/* Content Shows After Animation */
+setTimeout(() => {
+    content.style.display = "block";
+    loadder.style.display = "none";
+}, 500);
 
 /* Home */
 navHome.addEventListener("click", (e) => {

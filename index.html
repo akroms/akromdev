@@ -14,7 +14,7 @@
         <title>Akrom</title>
 
         <!-- Favicon of website -->
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="./src/images/favicon.ico">
 
         <!-- Google Fonts -->
         <link
@@ -23,1074 +23,1093 @@
         />
 
         <!-- External Stylesheet file-->
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./public/css/style.css"/>
     </head>
     <body>
-        <!-- Navbar -->
-        <nav class="navbar">
-            <!-- Container -->
-            <div class="container">
-                <!-- Nav -->
-                <nav class="nav">
-                    <!-- Nav Logo -->
-                    <a class="nav-logo" href="#home"
-                        >&lt;/Akrom<span class="nav-logo__highlight"
-                            >Dev &gt;</span
-                        ></a
-                    >
-
-                    <!-- Nav List -->
-                    <div class="nav-list">
-                        <a class="nav-item nav-home" href="" class="nav-item"
-                            >Home</a
+        <!-- Content -->
+        <div class="fade d-none content">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <!-- Container -->
+                <div class="container">
+                    <!-- Nav -->
+                    <nav class="nav">
+                        <!-- Nav Logo -->
+                        <a class="nav-logo" href="#home"
+                            >&lt;/Akrom<span class="nav-logo__highlight"
+                                >Dev &gt;</span
+                            ></a
                         >
-                        <a class="nav-item nav-portfolio" href="" class="nav-item"
-                            >Portfolio</a
-                        >
-                        <a class="nav-item nav-about-me" href="" class="nav-item"
-                            >About Me</a
-                        >
-                        <a class="nav-item nav-resources" href="" class="nav-item"
-                            >Resources</a
-                        >
-                    </div>
 
-                    <!-- Nav toggle-->
-                    <div class="nav-toggle">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-menu-2"
-                            width="28"
-                            height="28"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="#ffffff"
-                            fill="none"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <line x1="4" y1="6" x2="20" y2="6" />
-                            <line x1="4" y1="12" x2="20" y2="12" />
-                            <line x1="4" y1="18" x2="20" y2="18" />
-                        </svg>
-                    </div>
-                </nav>
-            </div>
-        </nav>
-
-        <!-- Home Section -->
-        <section class="home">
-            <!-- Container -->
-            <div class="container">
-                <!-- Home Section -->
-                <div class="home-section">
-                    <!-- Profile Image -->
-                    <img
-                        class="home-image"
-                        src="./images/Compressed.jpg"
-                        alt="profile image"
-                    />
-
-                    <!-- Home Content -->
-                    <div class="home-content">
-                        <!-- Home Title -->
-                        <h1 class="home-title">
-                            Hi, 
-                            <span class="home-title__welcome">Welcome</span>
-                            <span class="home-title__name">I`m Akrom</span>
-                        </h1>
-                        <!-- Home Subtitle-->
-                        <p class="home-subtitle">
-                            19 y.o, Tech Enthusiast, Frontend Engineer, Computer
-                            Science Student from Tashkent, Uzbeksitan. Welcome
-                            again to my webpage
-                        </p>
-                        <!-- Home Btns -->
-                        <div class="home-btns">
-                            <a target="_blank" href="https://drive.google.com/file/d/1xtB2kvnRSSM--tiYR78rto5ebLh8XCR5/view?usp=sharing" class="home-btn">Resume</a>
-                            <a href="" class="home-btn portfolio-btn">Portfolio</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio Section -->
-        <div class="portfolio">
-            <!-- Container -->
-            <div class="container">
-                <!-- Portfolio Section -->
-                <div class="portfolio-section">
-                    <!-- Portfolio Content -->
-                    <div class="portfolio-content">
-                        <!-- Portfolio title -->
-                        <h3 class="portfolio-title">Check out !</h3>
-
-                        <!-- Portfolio subtitle -->
-                        <div class="portfolio-subtitle">
-                            <span class="protfolio-title__work">My Work</span>
-                            <span class="protfolio-title__portfolio"
-                                >My Portfolio</span
+                        <!-- Nav List -->
+                        <div class="nav-list">
+                            <a class="nav-item nav-home" href="" class="nav-item"
+                                >Home</a
+                            >
+                            <a class="nav-item nav-portfolio" href="" class="nav-item"
+                                >Portfolio</a
+                            >
+                            <a class="nav-item nav-about-me" href="" class="nav-item"
+                                >About Me</a
+                            >
+                            <a class="nav-item nav-resources" href="" class="nav-item"
+                                >Resources</a
                             >
                         </div>
-                    </div>
-                    <!-- Portfolio Cards -->
-                    <div class="portfolio-cards"><!-- Space Company Card -->
-                        <div class="portfolio-card">
-                            <!-- Portfolio Card Image -->
-                            <img
-                                class="porfolio-card__image"
-                                src="./images/coffee-style.png"
-                                alt="card image"
-                            />
 
-                            <!-- Portfolio Card Content -->
-                            <div class="portfolio-card__content">
-                                <h5 class="portfolio-card__content-title">
-                                    Coffee Style
-                                </h5>
-                                <p class="portfolio-card__content-subtitle">
-                                    <span
-                                        class="portfolio-card__content-subtitle--highlight"
-                                        >Technologies:
-                                    </span>
-                                    Custumized Bootstrap with SASS
-                                </p>
-                            </div>
-                            <!-- Portfolio Card Btns -->
-                            <div class="portfolio-card__btns">
-                                <!-- Link to Netlify -->
-                                <a
-                                    href="https://coffee-style.netlify.app/"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                    ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-link"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
-                                        />
-                                        <path
-                                            d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
-                                        />
-                                    </svg>
-                                    Demo
-                                </a>
-                                <!-- Link to Github -->
-                                <a
-                                    href="https://github.com/akroms/coffee-style"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-brand-github"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                                        />
-                                    </svg>
-                                    Github
-                                </a>
-                            </div>
+                        <!-- Nav toggle-->
+                        <div class="nav-toggle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-menu-2"
+                                width="28"
+                                height="28"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="#ffffff"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <line x1="4" y1="6" x2="20" y2="6" />
+                                <line x1="4" y1="12" x2="20" y2="12" />
+                                <line x1="4" y1="18" x2="20" y2="18" />
+                            </svg>
                         </div>
+                    </nav>
+                </div>
+            </nav>
 
+            <!-- Home Section -->
+            <section class="home">
+                <!-- Container -->
+                <div class="container">
+                    <!-- Home Section -->
+                    <div class="home-section">
+                        <!-- Profile Image -->
+                        <img
+                            class="home-image"
+                            src="./src/images/Compressed.jpg"
+                            alt="profile image"
+                        />
 
-                        <!-- Space Company Card -->
-                        <div class="portfolio-card">
-                            <!-- Portfolio Card Image -->
-                            <img
-                                class="porfolio-card__image"
-                                src="./images/space.png"
-                                alt="card image"
-                            />
-
-                            <!-- Portfolio Card Content -->
-                            <div class="portfolio-card__content">
-                                <h5 class="portfolio-card__content-title">
-                                    Space Company
-                                </h5>
-                                <p class="portfolio-card__content-subtitle">
-                                    <span
-                                        class="portfolio-card__content-subtitle--highlight"
-                                        >Technologies:
-                                    </span>
-                                    Custumized Bootstrap 5
-                                </p>
-                            </div>
-                            <!-- Portfolio Card Btns -->
-                            <div class="portfolio-card__btns">
-                                <!-- Link to Netlify -->
-                                <a
-                                    href="https://space-company.netlify.app/"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                    ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-link"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
-                                        />
-                                        <path
-                                            d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
-                                        />
-                                    </svg>
-                                    Demo
-                                </a>
-                                <!-- Link to Github -->
-                                <a
-                                    href="https://github.com/akroms/space"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-brand-github"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                                        />
-                                    </svg>
-                                    Github
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Portfolio Pomodoro Card -->
-                        <div class="portfolio-card">
-                            <!-- Portfolio Card Image -->
-                            <img
-                                class="porfolio-card__image"
-                                src="./images/pomodoro.png"
-                                alt="card image"
-                            />
-
-                            <!-- Portfolio Card Content -->
-                            <div class="portfolio-card__content">
-                                <h5 class="portfolio-card__content-title">
-                                    Pomodoro App
-                                </h5>
-                                <p class="portfolio-card__content-subtitle">
-                                    <span
-                                        class="portfolio-card__content-subtitle--highlight"
-                                        >Technologies:
-                                    </span>
-                                    HTML CSS JS SASS
-                                </p>
-                            </div>
-                            <!-- Portfolio Card Btns -->
-                            <div class="portfolio-card__btns">
-                                <!-- Link to Netlify -->
-                                <a
-                                    href="https://pomidoro.netlify.app"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                    ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-link"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
-                                        />
-                                        <path
-                                            d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
-                                        />
-                                    </svg>
-                                    Demo
-                                </a>
-                                <!-- Link to Github -->
-                                <a
-                                    href="https://github.com/akroms/pomodoro-timer"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-brand-github"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                                        />
-                                    </svg>
-                                    Github
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Portfolio Aer Landing Page Card -->
-                        <div class="portfolio-card">
-                            <!-- Portfolio Card Image -->
-                            <img
-                                class="porfolio-card__image"
-                                src="./images/aer-landing-page.png"
-                                alt="card image"
-                            />
-
-                            <!-- Portfolio Card Content -->
-                            <div class="portfolio-card__content">
-                                <h5 class="portfolio-card__content-title">
-                                    Aer Landing Page
-                                </h5>
-                                <p class="portfolio-card__content-subtitle">
-                                    <span
-                                        class="portfolio-card__content-subtitle--highlight"
-                                        >Technologies:
-                                    </span>
-                                    HTML CSS JS
-                                </p>
-                            </div>
-                            <!-- Portfolio Card Btns -->
-                            <div class="portfolio-card__btns">
-                                <!-- Link to Netlify -->
-                                <a
-                                    href="https://aer-landing-page.netlify.app/"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                    ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-link"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
-                                        />
-                                        <path
-                                            d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
-                                        />
-                                    </svg>
-                                    Demo
-                                </a>
-                                <!-- Link to Github -->
-                                <a
-                                    href="https://github.com/akroms/aer-landing-page"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-brand-github"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                                        />
-                                    </svg>
-                                    Github
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Portfolio Unifeed Blog Card -->
-                        <div class="portfolio-card">
-                            <!-- Portfolio Card Image -->
-                            <img
-                                class="porfolio-card__image"
-                                src="./images/unifeed-landing-page.png"
-                                alt="card image"
-                            />
-
-                            <!-- Portfolio Card Content -->
-                            <div class="portfolio-card__content">
-                                <h5 class="portfolio-card__content-title">
-                                    Unifeed Landing Page
-                                </h5>
-                                <p class="portfolio-card__content-subtitle">
-                                    <span
-                                        class="portfolio-card__content-subtitle--highlight"
-                                        >Technologies:
-                                    </span>
-                                    HTML CSS JS SASS
-                                </p>
-                            </div>
-                            <!-- Portfolio Card Btns -->
-                            <div class="portfolio-card__btns">
-                                <!-- Link to Netlify -->
-                                <a
-                                    href="https://unifeed.netlify.app/"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                    ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-link"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
-                                        />
-                                        <path
-                                            d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
-                                        />
-                                    </svg>
-                                    Demo
-                                </a>
-                                <!-- Link to Github -->
-                                <a
-                                    href="https://github.com/akroms/unifeed"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-brand-github"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                                        />
-                                    </svg>
-                                    Github
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Portfolio EERO Company Landing Page Card -->
-                        <div class="portfolio-card">
-                            <!-- Portfolio Card Image -->
-                            <img
-                                class="porfolio-card__image"
-                                src="./images/eero-company.png"
-                                alt="card image"
-                            />
-
-                            <!-- Portfolio Card Content -->
-                            <div class="portfolio-card__content">
-                                <h5 class="portfolio-card__content-title">
-                                    EERO Company Website
-                                </h5>
-                                <p class="portfolio-card__content-subtitle">
-                                    <span
-                                        class="portfolio-card__content-subtitle--highlight"
-                                        >Technologies:
-                                    </span>
-                                    HTML CSS JS
-                                </p>
-                            </div>
-                            <!-- Portfolio Card Btns -->
-                            <div class="portfolio-card__btns">
-                                <!-- Link to Netlify -->
-                                <a
-                                    href="https://eero-company.netlify.app/"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                    ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-link"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
-                                        />
-                                        <path
-                                            d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
-                                        />
-                                    </svg>
-                                    Demo
-                                </a>
-                                <!-- Link to Github -->
-                                <a
-                                    href="https://github.com/akroms/eero-company"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-brand-github"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                                        />
-                                    </svg>
-                                    Github
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Portfolio Random User API Card -->
-                        <div class="portfolio-card">
-                            <!-- Portfolio Card Image -->
-                            <img
-                                class="porfolio-card__image"
-                                src="./images/random-user-api.png"
-                                alt="card image"
-                            />
-
-                            <!-- Portfolio Card Content -->
-                            <div class="portfolio-card__content">
-                                <h5 class="portfolio-card__content-title">
-                                    Random User API
-                                </h5>
-                                <p class="portfolio-card__content-subtitle">
-                                    <span
-                                        class="portfolio-card__content-subtitle--highlight"
-                                        >Technologies:
-                                    </span>
-                                    HTML CSS JS SASS
-                                </p>
-                            </div>
-                            <!-- Portfolio Card Btns -->
-                            <div class="portfolio-card__btns">
-                                <!-- Link to Netlify -->
-                                <a
-                                    href="https://random-uzer.netlify.app/"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                    ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-link"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
-                                        />
-                                        <path
-                                            d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
-                                        />
-                                    </svg>
-                                    Demo
-                                </a>
-                                <!-- Link to Github -->
-                                <a
-                                    href="https://github.com/akroms/random-user"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-brand-github"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                                        />
-                                    </svg>
-                                    Github
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Portfolio QR Code Component Card -->
-                        <div class="portfolio-card">
-                            <!-- Portfolio Card Image -->
-                            <img
-                                class="porfolio-card__image"
-                                src="./images/qr-code-component.png"
-                                alt="card image"
-                            />
-
-                            <!-- Portfolio Card Content -->
-                            <div class="portfolio-card__content">
-                                <h5 class="portfolio-card__content-title">
-                                    QR Code Component
-                                </h5>
-                                <p class="portfolio-card__content-subtitle">
-                                    <span
-                                        class="portfolio-card__content-subtitle--highlight"
-                                        >Technologies:
-                                    </span>
-                                    HTML CSS
-                                </p>
-                            </div>
-                            <!-- Portfolio Card Btns -->
-                            <div class="portfolio-card__btns">
-                                <!-- Link to Netlify -->
-                                <a
-                                    href="https://qrcode-card.netlify.app/"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                    ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-link"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
-                                        />
-                                        <path
-                                            d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
-                                        />
-                                    </svg>
-                                    Demo
-                                </a>
-                                <!-- Link to Github -->
-                                <a
-                                    href="https://github.com/akroms/qrcode-component"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-brand-github"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                                        />
-                                    </svg>
-                                    Github
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Portfolio Alkhwarizmi Website Card -->
-                        <div class="portfolio-card">
-                            <!-- Portfolio Card Image -->
-                            <img
-                                class="porfolio-card__image"
-                                src="./images/alkhwarizimi.png"
-                                alt="card image"
-                            />
-
-                            <!-- Portfolio Card Content -->
-                            <div class="portfolio-card__content">
-                                <h5 class="portfolio-card__content-title">
-                                    Alkhwarizmi Website
-                                </h5>
-                                <p class="portfolio-card__content-subtitle">
-                                    <span
-                                        class="portfolio-card__content-subtitle--highlight"
-                                        >Technologies:
-                                    </span>
-                                    HTML CSS
-                                </p>
-                            </div>
-                            <!-- Portfolio Card Btns -->
-                            <div class="portfolio-card__btns">
-                                <!-- Link to Netlify -->
-                                <a
-                                    href="https://alkhwarizmi.netlify.app/"
-                                    target="_blank"
-                                    class="portfolio-card__btn"
-                                    ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-link"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 24 24"
-                                        stroke-width="1.5"
-                                        stroke="#ffffff"
-                                        fill="none"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path
-                                            d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
-                                        />
-                                        <path
-                                            d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
-                                        />
-                                    </svg>
-                                    Demo
-                                </a>
+                        <!-- Home Content -->
+                        <div class="home-content">
+                            <!-- Home Title -->
+                            <h1 class="home-title">
+                                Hi, 
+                                <span class="home-title__welcome">Welcome</span>
+                                <span class="home-title__name">I`m Akrom</span>
+                            </h1>
+                            <!-- Home Subtitle-->
+                            <p class="home-subtitle">
+                                19 y.o, Tech Enthusiast, Frontend Engineer, Computer
+                                Science Student from Tashkent, Uzbeksitan. Welcome
+                                again to my webpage
+                            </p>
+                            <!-- Home Btns -->
+                            <div class="home-btns">
+                                <a target="_blank" href="https://drive.google.com/file/d/1xtB2kvnRSSM--tiYR78rto5ebLh8XCR5/view?usp=sharing" class="home-btn">Resume</a>
+                                <a href="" class="home-btn portfolio-btn">Portfolio</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <!-- About -->
-        <div class="about">
-            <!-- Container -->
-            <div class="container">
-                 <!-- About Section -->
-                <div class="about-section">
-                    <!-- About title About me-->
-                    <h2 class="about-title">
-                        About Me
-                    </h2>
-                    <!-- About subtitle -->
-                    <div class="about-subtitle">
-                        My name is Akrom Abdulvokhidov, I was born and grown up in Tashkent, Uzbekistan. I am tech enthusiast from childhood. Currently Working on Frontend side of web appilcations.
-                    </div>
+            <!-- Portfolio Section -->
+            <div class="portfolio">
+                <!-- Container -->
+                <div class="container">
+                    <!-- Portfolio Section -->
+                    <div class="portfolio-section">
+                        <!-- Portfolio Content -->
+                        <div class="portfolio-content">
+                            <!-- Portfolio title -->
+                            <h3 class="portfolio-title">Check out !</h3>
 
-                    <!-- About title Skills-->
-                    <h2 class="about-title">
-                        Skills
-                    </h2>
-                    <!-- About Skills -->
-                    <div class="about-skills">
-                        <!-- Skill HTML -->
-                        <p class="about-skill">
-                            <img class="about-skill__image" src="./images/Skills/html.png" alt="html">
-                            HTML
-                        </p>
-
-                        <!-- Skill CSS-->
-                        <p class="about-skill">
-                            <img  class="about-skill__image" src="./images/Skills/css.png" alt="css">
-                            CSS
-                        </p>
-
-                        <!-- Skill JavaScript-->
-                        <p class="about-skill">
-                            <img class="about-skill__image" src="./images/Skills/js.png" alt="JavaScript">
-                            JavaScript
-                        </p>
-
-                        <!-- Skill Sass-->
-                        <p class="about-skill">
-                            <img class="about-skill__image" src="./images/Skills/sass.png" alt="sass">
-                            SASS
-                        </p>
-                        <!-- Skill Bootstrap-->
-                        <p class="about-skill">
-                            <img class="about-skill__image" src="./images/Skills/bootstrap.png" alt="Bootstrap">
-                            Bootstrap
-                        </p>
-
-                        <!-- Skill Tailwind Css-->
-                        <p class="about-skill">
-                            <img class="about-skill__image" src="./images/Skills/tailwindcss.svg" alt="tailwindcss">
-                            Tailwind CSS
-                        </p>
-
-                        <!-- Skill Purge Css-->
-                        <p class="about-skill">
-                            <img class="about-skill__image" src="./images/Skills/purgecss.png" alt="purgecss">
-                            Purge CSS
-                        </p>
-
-                        <!-- Skill Npm Css-->
-                        <p class="about-skill">
-                            <img class="about-skill__image about-skill__image--npm" src="./images/Skills/npm.png" alt="npm">
-                            NPM
-                        </p>
-
-                        <!-- Skill Git-->
-                        <p class="about-skill">
-                            <img class="about-skill__image" src="./images/Skills/git.png" alt="git">
-                            Git
-                        </p>
-
-                        <!-- Skill Github-->
-                        <p class="about-skill">
-                            <img class="about-skill__image" src="./images/Skills/github.png" alt="github">
-                            Github
-                        </p>
-
-                        <!-- Skill Linux-->
-                        <p class="about-skill">
-                            <img class="about-skill__image" src="./images/Skills/linux.png" alt="linux">
-                            Linux
-                        </p>
-
-                        <!-- Skill C Language-->
-                        <p class="about-skill">
-                            <img class="about-skill__image" src="./images/Skills/c.png" alt="c language">
-                            C Language
-                        </p>
-
-                        <!-- Skill Arduino -->
-                        <p class="about-skill">
-                            <img class="about-skill__image" src="./images/Skills/arudino.png" alt="computer literacy">
-                            Arduino Programming
-                        </p>
-
-                        <!-- Skill Computer Literacy-->
-                        <p class="about-skill">
-                            <img class="about-skill__image" src="./images/Skills/computer literacy.png" alt="computer literacy">
-                            Computer Literacy
-                        </p>
-                        
-                    </div>
-
-                    <!-- About title Education-->
-                    <h2 class="about-title">
-                        Education
-                    </h2>
-                     <!-- About subtitle -->
-                     <div class="about-subtitle ">
-                        <!-- About subtitle Education -->
-                        <div class="about-subtitle__education">
-                            <span class="about-subtitle--education--highlight">Amity University Tashkent 2021 - 2025</span>
-                            <p class="about-subtitle--education">
-                                B.Tech - Computer Science and Engineering
-                            </p>
+                            <!-- Portfolio subtitle -->
+                            <div class="portfolio-subtitle">
+                                <span class="protfolio-title__work">My Work</span>
+                                <span class="protfolio-title__portfolio"
+                                    >My Portfolio</span
+                                >
+                            </div>
                         </div>
+                        <!-- Portfolio Cards -->
+                        <div class="portfolio-cards"><!-- Space Company Card -->
+                            <div class="portfolio-card">
+                                <!-- Portfolio Card Image -->
+                                <img
+                                    class="porfolio-card__image"
+                                    src="./src/images/coffee-style.png"
+                                    alt="card image"
+                                />
 
-                        <!-- About subtitle Education -->
-                        <div class="about-subtitle__education">
-                            <span class="about-subtitle--education--highlight">Amity University Tashkent 2020 - 2021</span>
-                            <p class="about-subtitle--education">
-                                IFS - International Foundation Degree
-                            </p>
-                        </div>
-
-                        <!-- About subtitle Education -->
-                        <div class="about-subtitle__education">
-                            <span class="about-subtitle--education--highlight">High School 2009 - 2020</span>
-                            <p class="about-subtitle--education">
-                                General - Foundational Subjects
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- About title Language-->
-                    <h2 class="about-title">
-                        Languages
-                    </h2>
-                    <!-- About subtitle -->
-                    <div class="about-subtitle">
-                        <p class="about-subtitle--language"><span class="about-subtitle--language--highlight">Uzbek:</span> Native</p>
-                        <p class="about-subtitle--language"><span class="about-subtitle--language--highlight">English:</span> Advanced</p>
-                        <p class="about-subtitle--language"><span class="about-subtitle--language--highlight">Arabic:</span> Basic</p>
-                        <p class="about-subtitle--language"><span class="about-subtitle--language--highlight">Russian:</span> Elementary</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-section">
-                    <div class="footer-content">
-                        <!-- Footer Title-->
-                        <p class="footer-title">
-                            &copy; AkromDev 2020 - 2022 | Made with 
-                            <div class="center">
-                                <div class="heart">
+                                <!-- Portfolio Card Content -->
+                                <div class="portfolio-card__content">
+                                    <h5 class="portfolio-card__content-title">
+                                        Coffee Style
+                                    </h5>
+                                    <p class="portfolio-card__content-subtitle">
+                                        <span
+                                            class="portfolio-card__content-subtitle--highlight"
+                                            >Technologies:
+                                        </span>
+                                        Custumized Bootstrap with SASS
+                                    </p>
                                 </div>
-                            </div>   
-                            <p class="footer-title">to Tech</p>
-                        </p>
-                        <!-- Footer Links-->
-                        <div class="footer-links">
-                            <!-- LinkedIn -->
-                            <div class="footer-links__container">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <rect x="4" y="4" width="16" height="16" rx="2" />
-                                    <line x1="8" y1="11" x2="8" y2="16" />
-                                    <line x1="8" y1="8" x2="8" y2="8.01" />
-                                    <line x1="12" y1="16" x2="12" y2="11" />
-                                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                                  </svg>
-                                <a target="_blank" href="https://www.linkedin.com/in/akrom-abdulvokhidov-4099881/" class="footer-link">LinkedIn</a>
+                                <!-- Portfolio Card Btns -->
+                                <div class="portfolio-card__btns">
+                                    <!-- Link to Netlify -->
+                                    <a
+                                        href="https://coffee-style.netlify.app/"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-link"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                                            />
+                                            <path
+                                                d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                                            />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                    <!-- Link to Github -->
+                                    <a
+                                        href="https://github.com/akroms/coffee-style"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-brand-github"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                                            />
+                                        </svg>
+                                        Github
+                                    </a>
+                                </div>
                             </div>
-                            <!-- GitHub -->
-                            <div class="footer-links__container">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-                                  </svg>
-                                  <a target="_blank" href="https://github.com/akroms" class="footer-link">Github</a>
+
+                            <!-- Space Company Card -->
+                            <div class="portfolio-card">
+                                <!-- Portfolio Card Image -->
+                                <img
+                                    class="porfolio-card__image"
+                                    src="./src/images/space.png"
+                                    alt="card image"
+                                />
+
+                                <!-- Portfolio Card Content -->
+                                <div class="portfolio-card__content">
+                                    <h5 class="portfolio-card__content-title">
+                                        Space Company
+                                    </h5>
+                                    <p class="portfolio-card__content-subtitle">
+                                        <span
+                                            class="portfolio-card__content-subtitle--highlight"
+                                            >Technologies:
+                                        </span>
+                                        Custumized Bootstrap 5
+                                    </p>
+                                </div>
+                                <!-- Portfolio Card Btns -->
+                                <div class="portfolio-card__btns">
+                                    <!-- Link to Netlify -->
+                                    <a
+                                        href="https://space-company.netlify.app/"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-link"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                                            />
+                                            <path
+                                                d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                                            />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                    <!-- Link to Github -->
+                                    <a
+                                        href="https://github.com/akroms/space"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-brand-github"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                                            />
+                                        </svg>
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Portfolio Pomodoro Card -->
+                            <div class="portfolio-card">
+                                <!-- Portfolio Card Image -->
+                                <img
+                                    class="porfolio-card__image"
+                                    src="./src/images/pomodoro.png"
+                                    alt="card image"
+                                />
+
+                                <!-- Portfolio Card Content -->
+                                <div class="portfolio-card__content">
+                                    <h5 class="portfolio-card__content-title">
+                                        Pomodoro App
+                                    </h5>
+                                    <p class="portfolio-card__content-subtitle">
+                                        <span
+                                            class="portfolio-card__content-subtitle--highlight"
+                                            >Technologies:
+                                        </span>
+                                        HTML CSS JS SASS
+                                    </p>
+                                </div>
+                                <!-- Portfolio Card Btns -->
+                                <div class="portfolio-card__btns">
+                                    <!-- Link to Netlify -->
+                                    <a
+                                        href="https://pomidoro.netlify.app"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-link"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                                            />
+                                            <path
+                                                d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                                            />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                    <!-- Link to Github -->
+                                    <a
+                                        href="https://github.com/akroms/pomodoro-timer"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-brand-github"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                                            />
+                                        </svg>
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Portfolio Aer Landing Page Card -->
+                            <div class="portfolio-card">
+                                <!-- Portfolio Card Image -->
+                                <img
+                                    class="porfolio-card__image"
+                                    src="./src/images/aer-landing-page.png"
+                                    alt="card image"
+                                />
+
+                                <!-- Portfolio Card Content -->
+                                <div class="portfolio-card__content">
+                                    <h5 class="portfolio-card__content-title">
+                                        Aer Landing Page
+                                    </h5>
+                                    <p class="portfolio-card__content-subtitle">
+                                        <span
+                                            class="portfolio-card__content-subtitle--highlight"
+                                            >Technologies:
+                                        </span>
+                                        HTML CSS JS
+                                    </p>
+                                </div>
+                                <!-- Portfolio Card Btns -->
+                                <div class="portfolio-card__btns">
+                                    <!-- Link to Netlify -->
+                                    <a
+                                        href="https://aer-landing-page.netlify.app/"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-link"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                                            />
+                                            <path
+                                                d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                                            />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                    <!-- Link to Github -->
+                                    <a
+                                        href="https://github.com/akroms/aer-landing-page"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-brand-github"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                                            />
+                                        </svg>
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Portfolio Unifeed Blog Card -->
+                            <div class="portfolio-card">
+                                <!-- Portfolio Card Image -->
+                                <img
+                                    class="porfolio-card__image"
+                                    src="./src/images/unifeed-landing-page.png"
+                                    alt="card image"
+                                />
+
+                                <!-- Portfolio Card Content -->
+                                <div class="portfolio-card__content">
+                                    <h5 class="portfolio-card__content-title">
+                                        Unifeed Landing Page
+                                    </h5>
+                                    <p class="portfolio-card__content-subtitle">
+                                        <span
+                                            class="portfolio-card__content-subtitle--highlight"
+                                            >Technologies:
+                                        </span>
+                                        HTML CSS JS SASS
+                                    </p>
+                                </div>
+                                <!-- Portfolio Card Btns -->
+                                <div class="portfolio-card__btns">
+                                    <!-- Link to Netlify -->
+                                    <a
+                                        href="https://unifeed.netlify.app/"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-link"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                                            />
+                                            <path
+                                                d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                                            />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                    <!-- Link to Github -->
+                                    <a
+                                        href="https://github.com/akroms/unifeed"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-brand-github"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                                            />
+                                        </svg>
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Portfolio EERO Company Landing Page Card -->
+                            <div class="portfolio-card">
+                                <!-- Portfolio Card Image -->
+                                <img
+                                    class="porfolio-card__image"
+                                    src="./src/images/eero-company.png"
+                                    alt="card image"
+                                />
+
+                                <!-- Portfolio Card Content -->
+                                <div class="portfolio-card__content">
+                                    <h5 class="portfolio-card__content-title">
+                                        EERO Company Website
+                                    </h5>
+                                    <p class="portfolio-card__content-subtitle">
+                                        <span
+                                            class="portfolio-card__content-subtitle--highlight"
+                                            >Technologies:
+                                        </span>
+                                        HTML CSS JS
+                                    </p>
+                                </div>
+                                <!-- Portfolio Card Btns -->
+                                <div class="portfolio-card__btns">
+                                    <!-- Link to Netlify -->
+                                    <a
+                                        href="https://eero-company.netlify.app/"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-link"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                                            />
+                                            <path
+                                                d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                                            />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                    <!-- Link to Github -->
+                                    <a
+                                        href="https://github.com/akroms/eero-company"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-brand-github"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                                            />
+                                        </svg>
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Portfolio Random User API Card -->
+                            <div class="portfolio-card">
+                                <!-- Portfolio Card Image -->
+                                <img
+                                    class="porfolio-card__image"
+                                    src="./src/images/random-user-api.png"
+                                    alt="card image"
+                                />
+
+                                <!-- Portfolio Card Content -->
+                                <div class="portfolio-card__content">
+                                    <h5 class="portfolio-card__content-title">
+                                        Random User API
+                                    </h5>
+                                    <p class="portfolio-card__content-subtitle">
+                                        <span
+                                            class="portfolio-card__content-subtitle--highlight"
+                                            >Technologies:
+                                        </span>
+                                        HTML CSS JS SASS
+                                    </p>
+                                </div>
+                                <!-- Portfolio Card Btns -->
+                                <div class="portfolio-card__btns">
+                                    <!-- Link to Netlify -->
+                                    <a
+                                        href="https://random-uzer.netlify.app/"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-link"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                                            />
+                                            <path
+                                                d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                                            />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                    <!-- Link to Github -->
+                                    <a
+                                        href="https://github.com/akroms/random-user"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-brand-github"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                                            />
+                                        </svg>
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Portfolio QR Code Component Card -->
+                            <div class="portfolio-card">
+                                <!-- Portfolio Card Image -->
+                                <img
+                                    class="porfolio-card__image"
+                                    src="./src/images/qr-code-component.png"
+                                    alt="card image"
+                                />
+
+                                <!-- Portfolio Card Content -->
+                                <div class="portfolio-card__content">
+                                    <h5 class="portfolio-card__content-title">
+                                        QR Code Component
+                                    </h5>
+                                    <p class="portfolio-card__content-subtitle">
+                                        <span
+                                            class="portfolio-card__content-subtitle--highlight"
+                                            >Technologies:
+                                        </span>
+                                        HTML CSS
+                                    </p>
+                                </div>
+                                <!-- Portfolio Card Btns -->
+                                <div class="portfolio-card__btns">
+                                    <!-- Link to Netlify -->
+                                    <a
+                                        href="https://qrcode-card.netlify.app/"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-link"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                                            />
+                                            <path
+                                                d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                                            />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                    <!-- Link to Github -->
+                                    <a
+                                        href="https://github.com/akroms/qrcode-component"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-brand-github"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                                            />
+                                        </svg>
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Portfolio Alkhwarizmi Website Card -->
+                            <div class="portfolio-card">
+                                <!-- Portfolio Card Image -->
+                                <img
+                                    class="porfolio-card__image"
+                                    src="./src/images/alkhwarizimi.png"
+                                    alt="card image"
+                                />
+
+                                <!-- Portfolio Card Content -->
+                                <div class="portfolio-card__content">
+                                    <h5 class="portfolio-card__content-title">
+                                        Alkhwarizmi Website
+                                    </h5>
+                                    <p class="portfolio-card__content-subtitle">
+                                        <span
+                                            class="portfolio-card__content-subtitle--highlight"
+                                            >Technologies:
+                                        </span>
+                                        HTML CSS
+                                    </p>
+                                </div>
+                                <!-- Portfolio Card Btns -->
+                                <div class="portfolio-card__btns">
+                                    <!-- Link to Netlify -->
+                                    <a
+                                        href="https://alkhwarizmi.netlify.app/"
+                                        target="_blank"
+                                        class="portfolio-card__btn"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-link"
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            stroke-width="1.5"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <path
+                                                stroke="none"
+                                                d="M0 0h24v24H0z"
+                                                fill="none"
+                                            />
+                                            <path
+                                                d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                                            />
+                                            <path
+                                                d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                                            />
+                                        </svg>
+                                        Demo
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
 
+            <!-- About -->
+            <div class="about">
+                <!-- Container -->
+                <div class="container">
+                    <!-- About Section -->
+                    <div class="about-section">
+                        <!-- About title About me-->
+                        <h2 class="about-title">
+                            About Me
+                        </h2>
+                        <!-- About subtitle -->
+                        <div class="about-subtitle">
+                            My name is Akrom Abdulvokhidov, I was born and grown up in Tashkent, Uzbekistan. I am tech enthusiast from childhood. Currently Working on Frontend side of web appilcations.
+                        </div>
+
+                        <!-- About title Skills-->
+                        <h2 class="about-title">
+                            Skills
+                        </h2>
+                        <!-- About Skills -->
+                        <div class="about-skills">
+                            <!-- Skill HTML -->
+                            <p class="about-skill">
+                                <img class="about-skill__image" src="./src/images/Skills/html.png" alt="html">
+                                HTML
+                            </p>
+
+                            <!-- Skill CSS-->
+                            <p class="about-skill">
+                                <img  class="about-skill__image" src="./src/images/Skills/css.png" alt="css">
+                                CSS
+                            </p>
+
+                            <!-- Skill JavaScript-->
+                            <p class="about-skill">
+                                <img class="about-skill__image" src="./src/images/Skills/js.png" alt="JavaScript">
+                                JavaScript
+                            </p>
+
+                            <!-- Skill Sass-->
+                            <p class="about-skill">
+                                <img class="about-skill__image" src="./src/images/Skills/sass.png" alt="sass">
+                                SASS
+                            </p>
+
+                            <!-- Skill Bootstrap-->
+                            <p class="about-skill">
+                                <img class="about-skill__image" src="./src/images/Skills/bootstrap.png" alt="Bootstrap">
+                                Bootstrap
+                            </p>
+
+                            <!-- Skill Tailwind Css-->
+                            <p class="about-skill">
+                                <img class="about-skill__image" src="./src/images/Skills/tailwindcss.svg" alt="tailwindcss">
+                                Tailwind CSS
+                            </p>
+
+                            <!-- Skill jQuery-->
+                            <p class="about-skill">
+                                <img class="about-skill__image" src="./src/images/Skills/jQuery.png" alt="purgecss">
+                                jQuery
+                            </p>
+
+                            <!-- Skill Purge Css-->
+                            <p class="about-skill">
+                                <img class="about-skill__image" src="./src/images/Skills/purgecss.png" alt="purgecss">
+                                Purge CSS
+                            </p>
+
+                            <!-- Skill Npm Css-->
+                            <p class="about-skill">
+                                <img class="about-skill__image about-skill__image--npm" src="./src/images/Skills/npm.png" alt="npm">
+                                NPM
+                            </p>
+
+                            <!-- Skill Git-->
+                            <p class="about-skill">
+                                <img class="about-skill__image" src="./src/images/Skills/git.png" alt="git">
+                                Git
+                            </p>
+
+                            <!-- Skill Github-->
+                            <p class="about-skill">
+                                <img class="about-skill__image" src="./src/images/Skills/github.png" alt="github">
+                                Github
+                            </p>
+
+                            <!-- Skill Linux-->
+                            <p class="about-skill">
+                                <img class="about-skill__image" src="./src/images/Skills/linux.png" alt="linux">
+                                Linux
+                            </p>
+
+                            <!-- Skill C Language-->
+                            <p class="about-skill">
+                                <img class="about-skill__image" src="./src/images/Skills/c.png" alt="c language">
+                                C Language
+                            </p>
+
+                            <!-- Skill Arduino -->
+                            <p class="about-skill">
+                                <img class="about-skill__image" src="./src/images/Skills/arudino.png" alt="computer literacy">
+                                Arduino Programming
+                            </p>
+
+                            <!-- Skill Computer Literacy-->
+                            <p class="about-skill">
+                                <img class="about-skill__image" src="./src/images/Skills/computer literacy.png" alt="computer literacy">
+                                Computer Literacy
+                            </p>
+
+                            <!-- Skill Touch typing -->
+                            <p class="about-skill">
+                                <img class="about-skill__image" src="./src/images/Skills/touch-typing.png" alt="computer literacy">
+                                Touch Typing (50WPM+)
+                            </p>
+                            
+                        </div>
+
+                        <!-- About title Education-->
+                        <h2 class="about-title">
+                            Education
+                        </h2>
+                        <!-- About subtitle -->
+                        <div class="about-subtitle ">
+                            <!-- About subtitle Education -->
+                            <div class="about-subtitle__education">
+                                <span class="about-subtitle--education--highlight">Amity University Tashkent 2021 - 2025</span>
+                                <p class="about-subtitle--education">
+                                    B.Tech - Computer Science and Engineering
+                                </p>
+                            </div>
+
+                            <!-- About subtitle Education -->
+                            <div class="about-subtitle__education">
+                                <span class="about-subtitle--education--highlight">Amity University Tashkent 2020 - 2021</span>
+                                <p class="about-subtitle--education">
+                                    IFS - International Foundation Degree
+                                </p>
+                            </div>
+
+                            <!-- About subtitle Education -->
+                            <div class="about-subtitle__education">
+                                <span class="about-subtitle--education--highlight">High School 2009 - 2020</span>
+                                <p class="about-subtitle--education">
+                                    General - Foundational Subjects
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- About title Language-->
+                        <h2 class="about-title">
+                            Languages
+                        </h2>
+                        <!-- About subtitle -->
+                        <div class="about-subtitle">
+                            <p class="about-subtitle--language"><span class="about-subtitle--language--highlight">Uzbek:</span> Native</p>
+                            <p class="about-subtitle--language"><span class="about-subtitle--language--highlight">English:</span> Advanced</p>
+                            <p class="about-subtitle--language"><span class="about-subtitle--language--highlight">Arabic:</span> Basic</p>
+                            <p class="about-subtitle--language"><span class="about-subtitle--language--highlight">Russian:</span> Elementary</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-section">
+                        <div class="footer-content">
+                            <!-- Footer Title-->
+                            <p class="footer-title">
+                                &copy; AkromDev 2020 - 2022 | Made with 
+                                <div class="center">
+                                    <div class="heart">
+                                    </div>
+                                </div>   
+                                <p class="footer-title">to Tech</p>
+                            </p>
+                            <!-- Footer Links-->
+                            <div class="footer-links">
+                                <!-- LinkedIn -->
+                                <div class="footer-links__container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                                        <line x1="8" y1="11" x2="8" y2="16" />
+                                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                                        <line x1="12" y1="16" x2="12" y2="11" />
+                                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                                    </svg>
+                                    <a target="_blank" href="https://www.linkedin.com/in/akrom-abdulvokhidov-4099881/" class="footer-link">LinkedIn</a>
+                                </div>
+                                <!-- GitHub -->
+                                <div class="footer-links__container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                                    </svg>
+                                    <a target="_blank" href="https://github.com/akroms" class="footer-link">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Loadder -->
+        <div class="loadder">
+            <img src="./src/images/Animation/loading Animation.gif" alt="lodder">
+        </div>
         <!-- Script file -->
-        <script src="./js/variables.js"></script>
-        <script src="./js/script.js"></script>
+        <script src="./src/js/variables.js"></script>
+        <script src="./src/js/script.js"></script>
     </body>
 </html>
