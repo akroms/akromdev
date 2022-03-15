@@ -21,7 +21,11 @@ const navPortfolioStyle = function (e) {
     footerStyle.style.position = "static";
     homeContent.style.display = "none";
     aboutContent.style.display = "none";
-    navList.style.animationName = "closeAnimation";
+    
+    if (navList.style.animationName === "openAnimation") {
+        navList.style.animationName = "closeAnimation";
+    }
+
     document.body.style.overflowY = "scroll";
     e.preventDefault();
 };
